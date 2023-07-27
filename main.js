@@ -312,195 +312,41 @@ btn2022.addEventListener('click', ()=> {
 } );
 
 
+//#######################################################################################
 
-let showallwinnersbtn = document.querySelector("#showallwinnersbtn");
-let hideallwinnersbtn = document.querySelector("#hideallwinnersbtn");
+//#######################################################################################
+//SHOW ALL WINNERS
+//#######################################################################################
 
+let showAllWinnersBtn = document.querySelector("#showAllWinnersBtn");
+let hideAllWinnersBtn = document.querySelector("#hideAllWinnersBtn");
+let removeHidden = document.querySelectorAll('.hidden');
+let eachYearButtons = document.querySelectorAll('#btn1930, #btn1934, #btn1938, #btn1938, #btn1950, #btn1954, #btn1958, #btn1962, #btn1966, #btn1970, #btn1974, #btn1978, #btn1982, #btn1986, #btn1990, #btn1994, #btn1998, #btn2002, #btn2006, #btn2010, #btn2014, #btn2018, #btn2022');
 
-showallwinnersbtn.addEventListener('click', ()=> {
-    if (winner1930.classList.contains("hidden")) {
-        winner1930.classList.remove("hidden");
-        btn1930.innerHTML = "Click to hide the winner of 1930";
-    }
+let addHidden = document.querySelectorAll('.border-2' && '.border-black' && '.mb-4');
 
-    if (winner1934.classList.contains("hidden")) {
-        winner1934.classList.remove("hidden");
-        btn1934.innerHTML = "Click to hide the winner of 1934";
-    }
-
-    if (winner1938.classList.contains("hidden")) {
-        winner1938.classList.remove("hidden");
-        btn1938.innerHTML = "Click to hide the winner of 1938";
-    }
-
-    if (winner1950.classList.contains("hidden")) {
-        winner1950.classList.remove("hidden");
-        btn1950.innerHTML = "Click to hide the winner of 1950";
-    }
-
-    if (winner1954.classList.contains("hidden")) {
-        winner1954.classList.remove("hidden");
-        btn1954.innerHTML = "Click to hide the winner of 1954";
-    }
-
-    if (winner1958.classList.contains("hidden")) {
-        winner1958.classList.remove("hidden");
-        btn1958.innerHTML = "Click to hide the winner of 1958";
-    }
-
-    if (winner1962.classList.contains("hidden")) {
-        winner1962.classList.remove("hidden");
-        btn1962.innerHTML = "Click to hide the winner of 1962";
-    }
-
-    if (winner1966.classList.contains("hidden")) {
-        winner1966.classList.remove("hidden");
-        btn1966.innerHTML = "Click to hide the winner of 1966";
-    }
-
-    if (winner1970.classList.contains("hidden")) {
-        winner1970.classList.remove("hidden");
-        btn1970.innerHTML = "Click to hide the winner of 1970";
-    }
-
-    if (winner1974.classList.contains("hidden")) {
-        winner1974.classList.remove("hidden");
-        btn1974.innerHTML = "Click to hide the winner of 1974";
-    }
-
-    if (winner1978.classList.contains("hidden")) {
-        winner1978.classList.remove("hidden");
-        btn1978.innerHTML = "Click to hide the winner of 1978";
-    }
-
-    if (winner1982.classList.contains("hidden")) {
-        winner1982.classList.remove("hidden");
-        btn1982.innerHTML = "Click to hide the winner of 1982";
-    }
-
-    if (winner1986.classList.contains("hidden")) {
-        winner1986.classList.remove("hidden");
-        btn1986.innerHTML = "Click to hide the winner of 1986";
-    }
-
-    if (winner1990.classList.contains("hidden")) {
-        winner1990.classList.remove("hidden");
-        btn1990.innerHTML = "Click to hide the winner of 1990";
-    }
-
-    if (winner1994.classList.contains("hidden")) {
-        winner1994.classList.remove("hidden");
-        btn1994.innerHTML = "Click to hide the winner of 1994";
-    }
-
-    if (winner1998.classList.contains("hidden")) {
-        winner1998.classList.remove("hidden");
-        btn1998.innerHTML = "Click to hide the winner of 1998";
-    }
-
-    if (winner2002.classList.contains("hidden")) {
-        winner2002.classList.remove("hidden");
-        btn2002.innerHTML = "Click to hide the winner of 2002";
-    }
-
-    if (winner2006.classList.contains("hidden")) {
-        winner2006.classList.remove("hidden");
-        btn2006.innerHTML = "Click to hide the winner of 2006";
-    }
-
-    if (winner2010.classList.contains("hidden")) {
-        winner2010.classList.remove("hidden");
-        btn2010.innerHTML = "Click to hide the winner of 2010";
-    }
-
-    if (winner2014.classList.contains("hidden")) {
-        winner2014.classList.remove("hidden");
-        btn2014.innerHTML = "Click to hide the winner of 2014";
-    }
-
-    if (winner2018.classList.contains("hidden")) {
-        winner2018.classList.remove("hidden");
-        btn2018.innerHTML = "Click to hide the winner of 2018";
-    }
-
-    if (winner2022.classList.contains("hidden")) {
-        winner2022.classList.remove("hidden");
-        btn2022.innerHTML = "Click to hide the winner of 2022";
-    }
+showAllWinnersBtn.addEventListener('click', ()=> {
+   removeHidden.forEach((removeHidden) => {
+    removeHidden.classList.remove('hidden');
+  });
+  
+  eachYearButtons.forEach((eachYearButtons) =>{
+    eachYearButtons.hidden=true;
+  });
 
 });
 
+//#######################################################################################
+//HIDE ALL WINNERS
+//#######################################################################################
 
-hideallwinnersbtn.addEventListener('click', ()=> {
-        winner1930.classList.add("hidden");
-        btn1930.innerHTML = "Click to view the winner of 1930";
+hideAllWinnersBtn.addEventListener('click', ()=> {
+    addHidden.forEach((addHidden) => {
+        addHidden.classList.add('hidden');
+    });
 
-        winner1934.classList.add("hidden");
-        btn1934.innerHTML = "Click to view the winner of 1934";
-
-        winner1938.classList.add("hidden");
-        btn1938.innerHTML = "Click to view the winner of 1938";
-
-        winner1950.classList.add("hidden");
-        btn1950.innerHTML = "Click to view the winner of 1950";
-
-        winner1954.classList.add("hidden");
-        btn1954.innerHTML = "Click to view the winner of 1954";
-
-        winner1958.classList.add("hidden");
-        btn1958.innerHTML = "Click to view the winner of 1958";
-
-        winner1962.classList.add("hidden");
-        btn1962.innerHTML = "Click to view the winner of 1962";
-
-        winner1966.classList.add("hidden");
-        btn1966.innerHTML = "Click to view the winner of 1966";
-
-        winner1970.classList.add("hidden");
-        btn1970.innerHTML = "Click to view the winner of 1970";
-
-        winner1970.classList.add("hidden");
-        btn1970.innerHTML = "Click to view the winner of 1970";
-
-        winner1974.classList.add("hidden");
-        btn1974.innerHTML = "Click to view the winner of 1974";
-
-        winner1978.classList.add("hidden");
-        btn1978.innerHTML = "Click to view the winner of 1978";
-
-        winner1982.classList.add("hidden");
-        btn1982.innerHTML = "Click to view the winner of 1982";
-
-        winner1986.classList.add("hidden");
-        btn1986.innerHTML = "Click to view the winner of 1986";
-
-        winner1990.classList.add("hidden");
-        btn1990.innerHTML = "Click to view the winner of 1990";
-
-        winner1994.classList.add("hidden");
-        btn1994.innerHTML = "Click to view the winner of 1994";
-
-        winner1998.classList.add("hidden");
-        btn1998.innerHTML = "Click to view the winner of 1998";
-
-        winner2002.classList.add("hidden");
-        btn2002.innerHTML = "Click to view the winner of 2002";
-
-        winner2006.classList.add("hidden");
-        btn2006.innerHTML = "Click to view the winner of 2006";
-
-        winner2010.classList.add("hidden");
-        btn2010.innerHTML = "Click to view the winner of 2010";
-
-        winner2014.classList.add("hidden");
-        btn2014.innerHTML = "Click to view the winner of 2014";
-
-        winner2018.classList.add("hidden");
-        btn2018.innerHTML = "Click to view the winner of 2018";
-
-        winner2022.classList.add("hidden");
-        btn2022.innerHTML = "Click to view the winner of 2022";
-
+    eachYearButtons.forEach((eachYearButtons) =>{
+        eachYearButtons.hidden=false;
+    });
 
 });
-
